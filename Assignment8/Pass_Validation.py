@@ -9,11 +9,11 @@ if(len(Pass)>=8):
     while(i<len(Pass)):
         if(ord(Pass[i])>=65 and ord(Pass[i])<=90):
             capital = 1
-        if(ord(Pass[i])>=97 and ord(Pass[i])<=122):
+        elif(ord(Pass[i])>=97 and ord(Pass[i])<=122):
             small = 1
-        if(ord(Pass[i])>=48 and ord(Pass[i])<=57):
+        elif(ord(Pass[i])>=48 and ord(Pass[i])<=57):
             num = 1
-        if(Pass[i]=="@" or Pass[i]=="#" or Pass[i]=="$" or Pass[i]=="&" or Pass[i]=="%" or Pass[i]=="*"):
+        elif(Pass[i]=="@" or Pass[i]=="#" or Pass[i]=="$" or Pass[i]=="&" or Pass[i]=="%" or Pass[i]=="*"):
             symbol = 1
         i+=1
     if(capital==1 and small == 1 and num == 1 and symbol == 1):
