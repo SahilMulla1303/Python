@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="paymentinfo.php" method="post" class="container">
+        <header>
+            <h1 class="main_heading"> Payment Form</h1>
+        </header>
+        <hr>
+        <section>
+        <label for="FName">Full Name :</label>
+        <input type="text" name="FName" id="FName" placeholder="Full Name" required><br><br>
+        
+        <label for="">Gender :</label>
+
+        <input type="radio" name="Gender" id="Male" value="Male">
+        <label for="Male">Male</label>
+
+        
+        <input type="radio" name="Gender" id="Female" value="Female">
+        <label for="Female">Female</label>
+
+        
+        <input type="radio" name="Gender" id="Other" value="Other">
+        <label for="Other">Other</label><br><br>
+
+        <label for="DOB">Date of Birth :</label>
+        <input type="date" name="DOB" id="DOB"><br><br>
+        
+        <label for="MobNo">Mobile no :</label>
+        <input type="number" name="MobNo" id="MobNo" required><br><br>
+
+        <label for="Email">Email :</label>
+        <input type="email" name="Email" id="Email" required><br><br>
+
+        <label for="Address">Address :</label> 
+        <textarea name="Address" id="Address" placeholder="Full Address" cols="70" rows="8" required>
+        </textarea>
+        <hr>
+    </section>
+
+        <h1 class="payment_info">Payment Information</h1>
+        <hr>
+
+        <label for="CardNo">Card No :</label>
+        <input type="number" name="CardNo" id="CardNo" required> <br><br>
+
+        <label for="CardType">Card Type :</label>
+        <select name="CardType" id="CardType" required>
+            <option value="">---Select Card Type---</option>
+            <option value="VISA">VISA</option>
+            <option value="RuPay">RuPay</option>
+            <option value="MasterCard">MasterCard</option>
+        </select><br><br>
+
+        <label for="CvvNo">Cvv No :</label>
+        <input type="number" name="CvvNo" id="CvvNo"><br><br>
+
+        <label for="ExpirDate">Expiration Date:</label> 
+        <input type="date" name="ExpirDate" id="ExpirDate" required><br><br>
+
+        <input type="submit">
+            
+    </form> 
+    <a href="paymentinfodiplay.php">
+        <button>Show Data</button></a>
+</body>
+</html>
